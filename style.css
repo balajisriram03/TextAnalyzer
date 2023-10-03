@@ -112,20 +112,19 @@ body {
   @media (min-width: 768px) and (max-width: 1024px) {
     /* Additional styles for iPad portrait mode */
     .card {
-      margin: 50% auto; /* Adjusted margin for better centering on iPad */
+      margin: 50% auto; 
       max-width: 500px;
     }
 
     .tools {
-      padding: 6px; /* Slightly reduced padding for tools */
+      padding: 6px; 
     }
     
     .circle {
-      padding: 0 3px; /* Slightly reduced padding for circles */
-    }
+      padding: 0 3px; 
 
     .output > h4 {
-      margin: 10px auto; /* Centered margin for output headings */
+      margin: 10px auto; 
     }
   }
 }
