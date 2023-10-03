@@ -28,7 +28,8 @@ body {
   }
   
   .card-content {
-    width: 60%;
+    width: 100%;
+    padding-bottom: 20px;
   }
   
   .tools {
@@ -98,7 +99,7 @@ body {
     }
     
     .card-content {
-      width: 80%;
+      width: 100%;
     }
     
     .text-input {
