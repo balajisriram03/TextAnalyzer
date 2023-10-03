@@ -1,0 +1,131 @@
+/* Default styles */
+body {
+    background-image: url(ventura.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .page-title {
+    text-align: center;
+    font-size: 30px;
+    position: absolute;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: white;
+  }
+  .card {
+    width: 90%;
+    max-width: 600px;
+    height: auto;
+    margin: 15% auto;
+    background-color: black;
+    border-radius: 8px;
+    z-index: 1;
+    transform: scale(1.5);
+  }
+  
+  .card-content {
+    width: 60%;
+  }
+  
+  .tools {
+    display: flex;
+    align-items: center;
+    padding: 9px;
+  }
+  
+  .circle {
+    padding: 0 4px;
+  }
+  
+  .box {
+    display: inline-block;
+    align-items: center;
+    width: 10px;
+    height: 10px;
+    padding: 1px;
+    border-radius: 50%;
+  }
+  
+  .red {
+    background-color: #ff605c;
+  }
+  
+  .yellow {
+    background-color: #ffbd44;
+  }
+  
+  .green {
+    background-color: #00ca4e;
+  }
+  
+  .text-input {
+    display: block;
+    width: 80%;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin: 2em auto 0;
+    padding: 10px;
+  }
+  
+  .output {
+    width: 80%;
+    margin: 20px auto;
+    color: aliceblue;
+  }
+  
+  .output > h4 {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 0;
+  }
+  
+  /* Media Queries */
+  @media (max-width: 768px) {
+
+    body{
+        /* background-size:cover; */
+        background-image: url(mobile.jpg);
+        background-repeat: no-repeat;
+    }
+    .card {
+        margin: 50% auto;
+      width: 90%;
+      transform: scale(1);
+    }
+    
+    .card-content {
+      width: 80%;
+    }
+    
+    .text-input {
+      width: 90%;
+    }
+    
+    .output {
+      width: 90%;
+    }
+  }
+  @media (min-width: 768px) and (max-width: 1024px) {
+    /* Additional styles for iPad portrait mode */
+    .card {
+      margin: 50% auto; /* Adjusted margin for better centering on iPad */
+      max-width: 500px;
+    }
+
+    .tools {
+      padding: 6px; /* Slightly reduced padding for tools */
+    }
+    
+    .circle {
+      padding: 0 3px; /* Slightly reduced padding for circles */
+    }
+
+    .output > h4 {
+      margin: 10px auto; /* Centered margin for output headings */
+    }
+  }
+}

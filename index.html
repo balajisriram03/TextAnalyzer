@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1 class="page-title">Text Analyzer</h1>
+    <div class="card">
+        <div class="tools">
+            <div class="circle">
+                <span id="chrs" class="red box"></span>
+            </div>
+            <div class="circle">
+                <span id="sen" class="yellow box"></span>
+            </div>
+            <div class="circle">
+                <span id="prg" class="green box"></span>
+            </div>
+        </div>
+        <div class="card__content">
+            <textarea id="text-input" class="text-input" placeholder="Type something..." rows="15" cols="10"></textarea>
+            <div class="output">
+                <h4>Words Count : <span id="words">0</span></h4>
+                <h4>Characters Count : <span id="chrst">0</span></h4>
+                <h4>Sentences Count : <span id="sent">0</span></h4>
+                <h4>Paragraph Count : <span id="prgh">0</span></h4>
+            </div>
+        </div>
+        <script src="script.js"></script>
+    </div>
+</body>
+</html>
